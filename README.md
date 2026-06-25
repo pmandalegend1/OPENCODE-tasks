@@ -1,4 +1,4 @@
-# WebWiz Tasks
+# Opencode Tasks
 This repository contains all tasks assigned, as part of the OpenCode club's AI/ML team.
 
 ## Structure
