@@ -1,0 +1,25 @@
+Title: Distance-Based Classification Using K-Nearest Neighbors
+
+1. Objective
+To implement a distance-based classification algorithm from scratch without using any machine learning classifier libraries.
+
+2. Dataset
+The Fashion-MNIST dataset was used. It consists of 28×28 grayscale images belonging to 10 different clothing categories.
+
+3. Feature Representation
+Each image was flattened into a 784-dimensional numerical vector and normalized to the range [0,1].
+
+4. Algorithm
+For every test sample, Euclidean distance was computed with respect to all training samples. The K nearest neighbors were selected and the most frequent class label among them was assigned as the prediction.
+
+5. Choice of K
+K was set to 5 to balance bias and variance. Smaller values increase sensitivity to noise, while larger values may oversmooth predictions.
+
+6. Evaluation
+Accuracy was computed as the ratio of correctly classified samples to the total number of test samples. Misclassified samples were recorded.
+
+7. Observations
+Misclassifications mainly occurred between visually similar clothing categories due to overlapping feature distributions.
+
+8. Conclusion
+The experiment demonstrates that effective classification can be achieved using distance-based similarity without explicit model training.
