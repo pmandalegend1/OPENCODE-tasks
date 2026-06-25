@@ -1,0 +1,35 @@
+dataset:
+  injection_samples: 750
+  clean_samples: 750
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42
+
+training:
+  decision_threshold: 0.40
+  random_seed: 42
+
+adversarial_loop:
+  iterations: 3
+  min_evasion_variants: 5
+
+redteam:
+  strategies:
+    - paraphrase
+    - obfuscate
+    - roleplay
+    - encode
+    - nested
+
+robustness:
+  edge_cases:
+    - base64
+    - unicode
+    - multiturn
+    - diluted
+
+paths:
+  artifacts_dir: artifacts
+  reports_dir: reports
+  data_processed: data/processed/dataset.csv
